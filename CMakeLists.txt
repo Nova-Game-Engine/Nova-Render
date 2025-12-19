@@ -10,7 +10,12 @@ endif()
 
 project(template_cmake)
 
+find_package(fmt CONFIG REQUIRED)
+
 include(cmake/CPM.cmake)
+
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 
 include(Libs.cmake)
 

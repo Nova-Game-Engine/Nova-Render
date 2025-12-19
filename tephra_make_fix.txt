@@ -1,0 +1,12 @@
+set(EXAMPLE_SOURCES
+    ${CMAKE_CURRENT_SOURCE_DIR}/examples_common.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/tephra_examples.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/window.cpp
+
+    ${CMAKE_CURRENT_SOURCE_DIR}/1_cube/cube.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/2_cornell_pt/cornell.cpp
+)
+
+add_executable(TephraExamples)
+
+target_sources(TephraExamples PRIVATE ${EXAMPLE_SOURCES})
